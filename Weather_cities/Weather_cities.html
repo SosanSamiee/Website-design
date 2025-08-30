@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fa">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Weather in cities</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="Weather_cities.css">
+    
+</head>
+
+<body>
+    <div class="content">
+        <div class="search">
+            <input class="seach-input" id="seachinput" type="text" placeholder="search...">
+            <button class="search-btn" id="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+        <div class="data">
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="flex">
+                <i class="fa-solid fa-cloud"></i> 
+                <div class="description"></div>
+            </div>
+            <div class="humidity"></div>
+            <div class="wind"></div>
+        </div>
+
+    </div>
+
+    <script>
+        const apiKey = "8a3f9e7915d95945c8bd971c5e11ac8d";
+        const city = "New York";
+        
+        fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`)
+          .then(response => response.json())
+          .then(data => {
+              document.querySelector(".city").textContent = `Weather in ${data.name}`;
+              document.querySelector(".temp").innerHTML = `${Math.round(data.main.temp)}&deg;C`;
+              document.querySelector(".description").textContent = data.weather[0].description;
+              document.querySelector(".humidity").textContent = `Humidity: ${data.main.humidity}%`;
+              document.querySelector(".wind").textContent = `Wind speed: ${data.wind.speed} km/h`;
+          });
+        </script>
+    <script src="Weather_cities.js"></script>
+</body>
+
+</html>

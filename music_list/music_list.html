@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>music_list</title>
+    <link rel="stylesheet" href="MusicPlayer.css">
+    <link rel="stylesheet" href="music_list.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <div class="main-music"></div>
+
+    <!-- Modal  -->
+    <div class="music-modal" id="musicModal">
+      <div class="music-modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        
+        <div class="player-container">
+            <div class="img-container">
+                <img src="" alt="" id="cover" class="activ">
+            </div>
+    
+            <h2 id="title"></h2>
+            <h3 id="artist"></h3>
+    
+            <audio id="audio" src=""></audio>
+    
+            <div class="progress-container" id="progress-container">
+                <div class="progress" id="progress"></div>
+                <div class="duration-wrapper">
+                    <span id="current-time"></span>
+                    <span id="duration"></span>
+                </div>
+                <div class="player-controls">
+                    <i class="fas fa-backward" id="prev" title="Previous"></i>
+                    <i class="fas fa-play main-button" id="play" title="play"></i>
+                    <i class="fas fa-forward" id="next" title="Next"></i>
+                </div>
+    
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="music_list.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rebeccapurple;
+}
+
+body {
+    /* background-color: red; */
+    background-image: url("images/p3.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+}
+
+.btn-custom {
+    background-color: #ffc107;
+    border: none;
+    color: black;
+    font-weight: bold;
+}

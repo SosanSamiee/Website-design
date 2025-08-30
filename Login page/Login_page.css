@@ -1,0 +1,49 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #428737;
+}
+
+.contaner{
+    width: 370px;
+    height: 300px;
+    margin: 150px auto;
+    background-color: #fff;
+    padding: 1px;
+    border-radius: 5px;
+}
+
+form{
+    margin: 15px;
+    /* padding: 30px 0; */
+    text-align: center;
+}
+
+input{
+    margin: 10px; 
+    padding: 10px;
+    background-color: lightgray;
+    width: 300px;
+    height: 30px;
+    border: 0;
+}
+
+input[type="submit"]{
+    background-color: #428737;
+    height: 30px;
+
+}
+
+p{
+    text-align: center;
+    color: grey;
+}
+
+.username-validation{
+    display: none;
+}

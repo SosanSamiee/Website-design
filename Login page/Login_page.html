@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+
+    <link rel="stylesheet" href="Login_page.css">
+    
+</head>
+<body>
+    <div class="contaner">
+        <form action="">
+            <input type="text" placeholder="username" class="username" onkeydown="usernameValidation()" />
+            <span class="username-validation">must contation 8 caracter(Min)</span> 
+
+            <input type="text" placeholder="password" class="password" onkeydown="passwordValidation()" />
+            <span class="password-validation">must contation 12 caracter(Min)</span>
+     
+            <input type="submit" value="Login">
+        </form>
+        <p>Not registered? Create an account</p>
+    </div>
+
+    <script src="Login_page.js"></script>
+
+</body>
+</html>
